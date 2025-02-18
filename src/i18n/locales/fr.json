@@ -1,0 +1,51 @@
+{
+  "nav": {
+    "services": "Services",
+    "about": "À propos",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Construction & Rénovation de Qualité",
+    "subtitle": "Transformez votre espace avec notre expertise et notre dévouement à l'excellence",
+    "cta": "Devis Gratuit"
+  },
+  "services": {
+    "title": "Nos Services",
+    "commercial": {
+      "title": "Construction Commerciale",
+      "desc": "Construction et rénovation commerciale complète"
+    },
+    "residential": {
+      "title": "Projets Résidentiels",
+      "desc": "Construction de maisons personnalisées et rénovations complètes"
+    },
+    "maintenance": {
+      "title": "Entretien & Réparations",
+      "desc": "Services professionnels d'entretien et de réparation"
+    }
+  },
+  "whyChooseUs": {
+    "title": "Pourquoi Nous Choisir",
+    "licensed": "Certifié & Assuré",
+    "experience": "Plus de 20 ans d'expérience",
+    "onTime": "Respect des Délais",
+    "quality": "Qualité Garantie"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "getInTouch": "Prenez Contact",
+    "form": {
+      "name": "Votre Nom",
+      "email": "Votre Email",
+      "message": "Votre Message",
+      "submit": "Envoyer le Message"
+    }
+  },
+  "footer": {
+    "rights": "Tous droits réservés."
+  },
+  "language": {
+    "en": "Anglais",
+    "fr": "Français"
+  }
+}
