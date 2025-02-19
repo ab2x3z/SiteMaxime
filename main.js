@@ -125,11 +125,13 @@ const translations = {
 };
 
 // Current language
-let currentLang = 'en';
+let currentLang = 'fr';
 
 // Function to update content
 function updateContent() {
   const t = translations[currentLang];
+  const langButton = document.getElementById('langToggle');
+  langButton.textContent = currentLang == 'en' ? 'FR' : 'EN';
   
   // Update navigation
   document.querySelectorAll('[localize]').forEach(element => {
@@ -147,11 +149,11 @@ function updateContent() {
   });
 }
 
-// Language switcher
-window.switchLanguage = function(lang) {
-  currentLang = lang;
+// Language toggle
+window.toggleLanguage = function() {
+  currentLang = currentLang === 'en' ? 'fr' : 'en';
   updateContent();
-  document.documentElement.lang = lang;
+  document.documentElement.lang = currentLang;
 }
 
 // Smooth scrolling for navigation links
