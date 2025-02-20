@@ -59,6 +59,9 @@ const translations = {
       submit: 'Send Message',
       getInTouch: 'Get In Touch',
       success: 'Thank you for your message! We will get back to you soon.'
+    },
+    footer: {
+      copyrights: '© 2024 Elite Construction & Remodeling. All rights reserved.'
     }
   },
   fr: {
@@ -120,6 +123,9 @@ const translations = {
       submit: 'Envoyer le Message',
       getInTouch: 'Contactez-Nous',
       success: 'Merci pour votre message ! Nous vous répondrons bientôt.'
+    },
+    footer: {
+      copyrights: '© 2024 Elite Construction & Remodeling. Tout droits réservés.'
     }
   }
 };
