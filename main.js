@@ -61,7 +61,7 @@ const translations = {
       success: 'Thank you for your message! We will get back to you soon.'
     },
     footer: {
-      copyrights: '© 2024 Elite Construction & Remodeling. All rights reserved.'
+      copyrights: '© 2025 Espace Sur Mesure Inc.. All rights reserved.'
     }
   },
   fr: {
@@ -125,7 +125,7 @@ const translations = {
       success: 'Merci pour votre message ! Nous vous répondrons bientôt.'
     },
     footer: {
-      copyrights: '© 2024 Elite Construction & Remodeling. Tout droits réservés.'
+      copyrights: '© 2025 Espace Sur Mesure Inc.. Tout droits réservés.'
     }
   }
 };
