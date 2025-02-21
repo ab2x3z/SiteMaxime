@@ -179,16 +179,6 @@ window.scrollToContact = function() {
   });
 }
 
-// Handle form submission
-window.handleSubmit = function(event) {
-  event.preventDefault();
-  const form = event.target;
-  const formData = new FormData(form);
-  
-  alert(translations[currentLang].contact.success);
-  form.reset();
-}
-
 // Add shadow to header on scroll
 window.addEventListener('scroll', () => {
   const header = document.querySelector('header');
