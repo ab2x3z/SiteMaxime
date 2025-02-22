@@ -56,12 +56,11 @@ const translations = {
       email: 'Email',
       phone: 'Phone',
       message: 'Tell us about your project',
-      submit: 'Send Message',
-      getInTouch: 'Get In Touch',
-      success: 'Thank you for your message! We will get back to you soon.'
+      submit: 'Send',
+      getInTouch: 'Get In Touch'
     },
     footer: {
-      copyrights: '© 2025 Espace Sur Mesure Inc.. All rights reserved.'
+      copyrights: '© 2025 Espace Sur Mesure Inc. All rights reserved.'
     }
   },
   fr: {
@@ -120,12 +119,11 @@ const translations = {
       email: 'Email',
       phone: 'Téléphone',
       message: 'Parlez-nous de votre projet',
-      submit: 'Envoyer le Message',
-      getInTouch: 'Contactez-Nous',
-      success: 'Merci pour votre message ! Nous vous répondrons bientôt.'
+      submit: 'Envoyer',
+      getInTouch: 'Contactez-Nous'
     },
     footer: {
-      copyrights: '© 2025 Espace Sur Mesure Inc.. Tout droits réservés.'
+      copyrights: '© 2025 Espace Sur Mesure Inc. Tout droits réservés.'
     }
   }
 };

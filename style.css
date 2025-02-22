@@ -29,23 +29,23 @@ header {
 }
 
 nav {
-  max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   color: var(--primary-color);
+  margin-right: auto;
 }
 
 .nav-links {
   display: flex;
   gap: 2rem;
+  margin-left: auto;
 }
 
 .nav-links a {
@@ -62,6 +62,7 @@ nav {
 .lang-switcher {
   display: flex;
   gap: 0.5rem;
+  margin-left: 1rem;
 }
 
 .lang-switcher button {
@@ -84,7 +85,7 @@ nav {
 .hero {
   height: 100vh;
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-              url('https://images.unsplash.com/photo-1504307651254-35680f356dfd');
+              url('/hero.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
