@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Espace Sur Mesure Inc.</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">Espace Sur Mesure Inc.</div>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="lang-switcher">
+        <a href="/fr/">FR</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Quality Construction & Remodeling Services</h1>
+      <p>Transform your space with our expert craftsmanship</p>
+      <button onclick="scrollToContact()">Get Free Quote</button>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <h3>Home Renovation</h3>
+        <p>Complete home makeovers and renovations</p>
+      </div>
+      <div class="service-card">
+        <h3>Kitchen Remodeling</h3>
+        <p>Custom kitchen designs and installations</p>
+      </div>
+      <div class="service-card">
+        <h3>Bathroom Updates</h3>
+        <p>Modern bathroom renovations</p>
+      </div>
+      <div class="service-card">
+        <h3>Custom Carpentry</h3>
+        <p>Bespoke woodwork and installations</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Recent Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <div class="project-image" style="background-image: url('/1.jpg')"></div>
+        <h3>Modern Kitchen Renovation</h3>
+        <p>Complete kitchen remodel with custom cabinets</p>
+      </div>
+      <div class="project-card">
+        <div class="project-image" style="background-image: url('/2.jpg')"></div>
+        <h3>Luxury Bathroom</h3>
+        <p>High-end bathroom renovation</p>
+      </div>
+      <div class="project-card">
+        <div class="project-image" style="background-image: url('/3.jpg')"></div>
+        <h3>Home Addition</h3>
+        <p>Two-story addition with master suite</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>With over 20 years of experience, we pride ourselves on delivering exceptional craftsmanship and customer
+      service. Our team of skilled professionals is dedicated to bringing your vision to life while maintaining the
+      highest standards of quality and safety.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-container">
+      <form id="contactForm" name="Soumission" netlify>
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="tel" name="phone" placeholder="Phone">
+        <textarea name="message" placeholder="Tell us about your project" required></textarea>
+        <button type="submit"></button>
+      </form>
+      <div class="contact-info">
+        <h3>Get In Touch</h3>
+        <p>📱 (555) 123-4567</p>
+        <p>📧 info@eliteconstruction.com</p>
+        <p>📍 123 Builder Street, Construction City, ST 12345</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Espace Sur Mesure Inc. All rights reserved.</p>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

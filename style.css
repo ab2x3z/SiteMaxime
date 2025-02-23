@@ -33,6 +33,7 @@ nav {
   padding: 1rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
@@ -65,7 +66,7 @@ nav {
   margin-left: 1rem;
 }
 
-.lang-switcher button {
+.lang-switcher a {
   background: none;
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
@@ -74,9 +75,10 @@ nav {
   border-radius: 4px;
   font-size: 0.875rem;
   transition: all 0.3s;
+  text-decoration: none;
 }
 
-.lang-switcher button:hover {
+.lang-switcher a:hover {
   background: var(--primary-color);
   color: var(--white);
 }
