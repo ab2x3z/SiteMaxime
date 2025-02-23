@@ -21,7 +21,7 @@ body {
 /* Header & Navigation */
 header {
   background: var(--white);
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
   top: 0;
@@ -86,8 +86,8 @@ nav {
 /* Hero Section */
 .hero {
   height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-              url('/hero.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/hero.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -136,7 +136,7 @@ section h2 {
   background: var(--white);
   padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s;
 }
@@ -158,7 +158,7 @@ section h2 {
   background: var(--white);
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .project-image {
@@ -167,7 +167,8 @@ section h2 {
   background-position: center;
 }
 
-.project-card h3, .project-card p {
+.project-card h3,
+.project-card p {
   padding: 1rem;
 }
 
@@ -197,7 +198,8 @@ form {
   gap: 1rem;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 0.8rem;
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -228,7 +230,7 @@ button:hover {
   padding: 2rem;
   background: var(--white);
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
@@ -244,22 +246,19 @@ footer {
   nav {
     flex-wrap: wrap;
   }
-  
+
   .nav-links {
-    order: 3;
-    width: 100%;
-    margin-top: 1rem;
-    justify-content: center;
+    display: none;
   }
-  
+
   .lang-switcher {
-    order: 2;
+    display: none;
   }
-  
+
   .hero h1 {
     font-size: 2rem;
   }
-  
+
   section {
     padding: 3rem 1rem;
   }
