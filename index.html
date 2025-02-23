@@ -1,106 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Espace Sur Mesure Inc.</title>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace Sur Mesure</title>
     <link rel="stylesheet" href="/style.css">
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="logo">Espace Sur Mesure Inc.</div>
-        <div class="nav-links">
-          <a href="#services" localize="nav.services"></a>
-          <a href="#projects" localize="nav.projects"></a>
-          <a href="#about" localize="nav.about"></a>
-          <a href="#contact" localize="nav.contact"></a>
-        </div>
-        <div class="lang-switcher">
-          <button onclick="toggleLanguage()" id="langToggle"></button>
-        </div>
-      </nav>
-    </header>
-
-    <section class="hero">
-      <div class="hero-content">
-        <h1 localize="hero.title"></h1>
-        <p localize="hero.subtitle"></p>
-        <button onclick="scrollToContact()" localize="hero.cta"></button>
-      </div>
-    </section>
-
-    <section id="services" class="services">
-      <h2 localize="services.title"></h2>
-      <div class="service-grid">
-        <div class="service-card">
-          <h3 localize="services.renovation.title"></h3>
-          <p localize="services.renovation.desc"></p>
-        </div>
-        <div class="service-card">
-          <h3 localize="services.kitchen.title"></h3>
-          <p localize="services.kitchen.desc"></p>
-        </div>
-        <div class="service-card">
-          <h3 localize="services.bathroom.title"></h3>
-          <p localize="services.bathroom.desc"></p>
-        </div>
-        <div class="service-card">
-          <h3 localize="services.carpentry.title"></h3>
-          <p localize="services.carpentry.desc"></p>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="projects">
-      <h2 localize="projects.title"></h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <div class="project-image" style="background-image: url('/1.jpg')"></div>
-          <h3 localize="projects.kitchen.title"></h3>
-          <p localize="projects.kitchen.desc"></p>
-        </div>
-        <div class="project-card">
-          <div class="project-image" style="background-image: url('/2.jpg')"></div>
-          <h3 localize="projects.bathroom.title"></h3>
-          <p localize="projects.bathroom.desc"></p>
-        </div>
-        <div class="project-card">
-          <div class="project-image" style="background-image: url('/3.jpg')"></div>
-          <h3 localize="projects.addition.title"></h3>
-          <p localize="projects.addition.desc"></p>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="about">
-      <h2 localize="about.title"></h2>
-      <p localize="about.content"></p>
-    </section>
-
-    <section id="contact" class="contact">
-      <h2 localize="contact.title"></h2>
-      <div class="contact-container">
-        <form id="contactForm" name="Soumission" netlify>
-          <input type="text" name="name" localize="contact.name" placeholder="Name" required>
-          <input type="email" name="email" localize="contact.email" placeholder="Email" required>
-          <input type="tel" name="phone" localize="contact.phone" placeholder="Phone">
-          <textarea name="message" localize="contact.message" placeholder="Tell us about your project" required></textarea>
-          <button type="submit" localize="contact.submit"></button>
-        </form>
-        <div class="contact-info">
-          <h3 localize="contact.getInTouch"></h3>
-          <p>📱 (555) 123-4567</p>
-          <p>📧 info@eliteconstruction.com</p>
-          <p>📍 123 Builder Street, Construction City, ST 12345</p>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <p localize="footer.copyrights"></p>
-    </footer>
-
-    <script type="module" src="/main.js"></script>
-  </body>
+</head>
+<body>
+    <script>
+        // Redirect to language-specific page based on browser settings
+        const userLang = navigator.language || navigator.userLanguage;
+        if (userLang.startsWith('fr')) {
+            window.location.href = '/fr/';
+        } else {
+            window.location.href = '/en/';
+        }
+    </script>
+</body>
 </html>
