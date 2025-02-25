@@ -157,12 +157,6 @@ section h2 {
   transition-delay: 300ms;
 }
 
-.animateUp {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateY(0);
-}
-
 .service-card:hover {
   transform: translateY(-5px);
 }
@@ -181,6 +175,25 @@ section h2 {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 1s;
+  /*When hidden*/
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-50%);
+}
+
+.project-card:nth-child(2) {
+  transition-delay: 100ms;
+}
+
+.project-card:nth-child(3) {
+  transition-delay: 200ms;
+}
+
+.animate {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
 }
 
 .project-image {
@@ -283,5 +296,16 @@ footer {
 
   section {
     padding: 3rem 1rem;
+  }
+}
+
+/*Remove animations*/
+@media(prefers-reduced-motion) {
+  .service-card {
+    transition: none;
+  }
+
+  .project-card {
+    transition: none;
   }
 }

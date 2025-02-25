@@ -26,28 +26,17 @@ window.addEventListener('scroll', () => {
 });
 
 // Scroll animations
-const serviceCardObserver = new IntersectionObserver((entries) => {
+const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    console.log(entry)
     if (entry.isIntersecting) {
-      entry.target.classList.add('animateUp')
+      entry.target.classList.add('animate')
     } else {
-      entry.target.classList.remove('animateUp')
+      entry.target.classList.remove('animate')
     }
   });
 });
 const serviceCards = document.querySelectorAll('.service-card');
-serviceCards.forEach((el) => serviceCardObserver.observe(el));
+serviceCards.forEach((el) => observer.observe(el));
 
-const projectCardObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    console.log(entry)
-    if (entry.isIntersecting) {
-      entry.target.classList.add('animateLeft')
-    } else {
-      entry.target.classList.remove('animateLeft')
-    }
-  });
-});
 const projectCards = document.querySelectorAll('.project-card');
-projectCards.forEach((el) => projectCardObserver.observe(el));
+projectCards.forEach((el) => observer.observe(el));
