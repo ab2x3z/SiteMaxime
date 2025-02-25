@@ -9,7 +9,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Function to scroll to contact section
-window.scrollToContact = function() {
+window.scrollToContact = function () {
   document.querySelector('#contact').scrollIntoView({
     behavior: 'smooth'
   });
@@ -25,7 +25,29 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// Initialize content
-document.addEventListener('DOMContentLoaded', () => {
-  updateContent();
+// Scroll animations
+const serviceCardObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry)
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animateUp')
+    } else {
+      entry.target.classList.remove('animateUp')
+    }
+  });
 });
+const serviceCards = document.querySelectorAll('.service-card');
+serviceCards.forEach((el) => serviceCardObserver.observe(el));
+
+const projectCardObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry)
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animateLeft')
+    } else {
+      entry.target.classList.remove('animateLeft')
+    }
+  });
+});
+const projectCards = document.querySelectorAll('.project-card');
+projectCards.forEach((el) => projectCardObserver.observe(el));
