@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Espace Sur Mesure Inc.</title>
   <link rel="stylesheet" href="/style.css">
-  <script defer src="/main.js"></script>
+  <script defer src="main.js"></script>
 </head>
-
 <body>
   <header>
     <nav>
-      <div class="logo">Espace Sur Mesure Inc.</div>
+      <div class="logo">
+        <img src="/Logo.svg" alt="Espace Sur Mesure Inc.">
+      </div>
       <div class="nav-links">
         <a href="#services">Services</a>
         <a href="#projects">Projects</a>
@@ -20,85 +20,85 @@
         <a href="#contact">Contact</a>
       </div>
       <div class="lang-switcher">
-        <a href="/fr/">FR</a>
+        <a href="/fr/">FR</a> 
       </div>
     </nav>
   </header>
-
   <section class="hero">
     <div class="hero-content">
-      <h1>Quality Construction & Remodeling Services</h1>
-      <p>Transform your space with our expert craftsmanship</p>
-      <button onclick="scrollToContact()">Get Free Quote</button>
+      <h1>Your Cabinet Installation Experts</h1>
+      <p>We transform your space with custom cabinets, installed with precision.</p>
+      <button onclick="scrollToContact()">Free Quote</button>
     </div>
   </section>
-
   <section id="services" class="services">
     <h2>Our Services</h2>
     <div class="service-grid">
       <div class="service-card">
-        <h3>Home Renovation</h3>
-        <p>Complete home makeovers and renovations</p>
+        <h3>Kitchen</h3>
+        <p>Kitchen cabinet installation</p>
       </div>
       <div class="service-card">
-        <h3>Kitchen Remodeling</h3>
-        <p>Custom kitchen designs and installations</p>
+        <h3>Bathroom</h3>
+        <p>Bathroom cabinet installation</p>
       </div>
       <div class="service-card">
-        <h3>Bathroom Updates</h3>
-        <p>Modern bathroom renovations</p>
+        <h3>Storage</h3>
+        <p>Manufacturing and installation of storage cabinets</p>
       </div>
       <div class="service-card">
-        <h3>Custom Carpentry</h3>
-        <p>Bespoke woodwork and installations</p>
+        <h3>Interior Finishing</h3>
+        <p>Installation of moldings, backsplashes, interior doors, and much more.</p>
       </div>
     </div>
   </section>
-
   <section id="projects" class="projects">
     <h2>Recent Projects</h2>
     <div class="project-grid">
+      <span>Coming soon...</span>
+      <!-- 
       <div class="project-card">
         <div class="project-image" style="background-image: url('/1.jpg')"></div>
         <h3>Modern Kitchen Renovation</h3>
-        <p>Complete kitchen remodel with custom cabinets</p>
+        <p>Complete renovation with custom cabinets</p>
       </div>
       <div class="project-card">
         <div class="project-image" style="background-image: url('/2.jpg')"></div>
         <h3>Luxury Bathroom</h3>
-        <p>High-end bathroom renovation</p>
+        <p>High-end renovation</p>
       </div>
       <div class="project-card">
         <div class="project-image" style="background-image: url('/3.jpg')"></div>
-        <h3>Home Addition</h3>
-        <p>Two-story addition with master suite</p>
-      </div>
+        <h3>Home Extension</h3>
+        <p>Two-story extension with master suite</p>
+      </div> 
+      -->
     </div>
   </section>
-
   <section id="about" class="about">
     <h2>About Us</h2>
-    <p>With over 20 years of experience, we pride ourselves on delivering exceptional craftsmanship and customer
-      service. Our team of skilled professionals is dedicated to bringing your vision to life while maintaining the
-      highest standards of quality and safety.</p>
+    <p>Welcome to our family business, specializing in the installation of kitchen, bathroom, and storage cabinets. With several years of experience, we have perfected our craftsmanship to offer top-quality installations.
+      Our professional team is dedicated to each project, ensuring impeccable results that meet your expectations. We are passionate about our trade and are committed to transforming your space with custom solutions and a flawless finish.
+      
+      Trust our expertise for results that combine quality, precision, and satisfaction.</p>
   </section>
-
   <section id="team" class="team">
     <h2>Our Team</h2>
     <div class="team-grid">
-      <div class="team-card">
-        <img src="/team-1.jpg" alt="Team Member 1">
-        <h3>John Doe</h3>
-        <p>Project Manager</p>
+      <div class="team-member">
+        <!-- <img src="/team1.jpg" alt="Christophe Sanchez"> -->
+        <h3>Christophe Sanchez</h3>
+        <p>Owner</p>
+        <p>Christophe, a cabinetmaker with over 40 years of experience. Passionate about his work, he has completed numerous renovation projects and custom cabinet creations. His expertise and dedication guarantee high-quality results, meeting your expectations and deadlines.</p>
       </div>
-      <div class="team-card">
-        <img src="/team-2.jpg" alt="Team Member 2">
-        <h3>Jane Smith</h3>
-        <p>Lead Designer</p>
+      <div class="team-member">
+        <!-- <img src="/team2.jpg" alt="Maxime Sanchez"> -->
+        <h3>Maxime Sanchez</h3>
+        <p>Owner</p>
+        <p>Maxime inherited his father's passion for the trade. Thanks to his skills and experience, he carries out high-quality work. His commitment to customer satisfaction and his attention to detail guarantee impeccable results.</p>
       </div>
     </div>
   </section>
-
   <section id="contact" class="contact">
     <h2>Contact Us</h2>
     <div class="contact-container">
@@ -106,23 +106,23 @@
         <input type="text" name="name" placeholder="Name" required>
         <input type="email" name="email" placeholder="Email" required>
         <input type="tel" name="phone" placeholder="Phone">
-        <textarea name="message" placeholder="Tell us about your project" required></textarea>
+        <textarea name="message" placeholder="Tell us more about your project"
+          required></textarea>
         <button type="submit">Send</button>
       </form>
       <div class="contact-info">
-        <h3>Get In Touch</h3>
-        <p>📱 (555) 123-4567</p>
-        <p>📧 info@eliteconstruction.com</p>
-        <p>📍 123 Builder Street, Construction City, ST 12345</p>
+        <h3>Phone</h3>
+        <p>Christophe Sanchez : (514) 704-0232</p>
+        <p>Maxime Sanchez : (514) 371-1047</p>
+        <h3>Email</h3>
+        <p>info@espacesurmesure.ca</p>
+        <p>RBQ. : 5858-4814-01</p>
       </div>
     </div>
   </section>
-
   <footer>
-    <p>© 2025 Espace Sur Mesure Inc. All rights reserved.</p>
+    <p>© 2025 All rights reserved | Espace sur mesure inc.</p>
   </footer>
-
   <script type="module" src="/main.js"></script>
 </body>
-
 </html>
