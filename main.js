@@ -40,3 +40,6 @@ serviceCards.forEach((el) => observer.observe(el));
 
 const projectCards = document.querySelectorAll('.project-card');
 projectCards.forEach((el) => observer.observe(el));
+
+const teamMembers = document.querySelectorAll('.team-member');
+teamMembers.forEach((el) => observer.observe(el));
