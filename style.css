@@ -336,6 +336,44 @@ footer {
   padding: 2rem;
 }
 
+.contact form .file-input-container {
+  margin-bottom: 1rem;
+}
+
+.contact form .file-upload-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+.contact form input[type="file"] {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.contact form .file-list-display {
+  margin-top: 0.5rem;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.contact form .file-list-display ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+.contact form .file-list-display li {
+  margin-bottom: 3px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   nav {

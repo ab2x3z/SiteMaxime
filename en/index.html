@@ -103,12 +103,16 @@
   <section id="contact" class="contact">
     <h2>Contact Us</h2>
     <div class="contact-container">
-      <form id="contactForm" name="Soumission" netlify>
+      <form id="contactForm" name="Soumission" netlify enctype="multipart/form-data">
         <input type="text" name="name" placeholder="Name" required>
         <input type="email" name="email" placeholder="Email" required>
         <input type="tel" name="phone" placeholder="Phone">
-        <textarea name="message" placeholder="Tell us more about your project"
-          required></textarea>
+        <textarea name="message" placeholder="Tell us more about your project" required></textarea>
+        <div class="file-input-container">
+          <!-- <label for="file-upload" class="file-upload-label">Add files (PDF, Images)</label> -->
+          <input type="file" id="file-upload" name="attachment" accept=".pdf,image/*" multiple>
+          <div id="file-list" class="file-list-display"></div>
+        </div>
         <button type="submit">Send</button>
       </form>
       <div class="contact-info">
