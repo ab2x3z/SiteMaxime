@@ -44,3 +44,27 @@ projectCards.forEach((el) => observer.observe(el));
 
 const teamMembers = document.querySelectorAll('.team-member');
 teamMembers.forEach((el) => observer.observe(el));
+
+// Display selected file names
+document.addEventListener('DOMContentLoaded', () => {
+  const fileInput = document.getElementById('file-upload');
+  const fileListDisplay = document.getElementById('file-list');
+  const contactForm = document.getElementById('contactForm');
+
+  if (fileInput && fileListDisplay) {
+    fileInput.addEventListener('change', (event) => {
+      fileListDisplay.innerHTML = ''; // Clear previous list
+      const files = event.target.files;
+      if (files.length > 0) {
+        const list = document.createElement('ul');
+
+        for (let i = 0; i < files.length; i++) {
+          const listItem = document.createElement('li');
+          listItem.textContent = files[i].name;
+          list.appendChild(listItem);
+        }
+        fileListDisplay.appendChild(list);
+      }
+    });
+  }
+});
