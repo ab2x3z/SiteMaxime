@@ -40,13 +40,19 @@ nav {
   font-size: 2rem;
   font-weight: bold;
   color: var(--secondary-color);
-  margin-right: auto;
 }
 
 .logo img {
   width: 250px;
   height: auto;
 }
+
+.nav-menu {
+  display: flex; /* For desktop: nav-links and lang-switcher side-by-side */
+  align-items: center;
+}
+
+/* nav-links and lang-switcher are children of nav-menu */
 
 .nav-links {
   display: flex;
@@ -161,7 +167,7 @@ section h2 {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg,rgba(0,0,0,0.25) 40%,rgba(0,0,0,0.65) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 40%, rgba(0, 0, 0, 0.65) 100%);
   z-index: 0;
   border-radius: 8px;
 }
@@ -171,7 +177,7 @@ section h2 {
   position: relative;
   z-index: 1;
   color: #fff;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 .service-card h3 {
@@ -402,23 +408,71 @@ footer {
   margin-bottom: 3px;
 }
 
+/* Hamburger Menu Button */
+.hamburger-button {
+  display: none; /* Hidden by default, shown in media query */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1001;
+}
+
+.hamburger-line {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: var(--primary-color);
+  margin: 5px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Styling for 'X' close icon when menu is open */
+.hamburger-button.open .hamburger-line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger-button.open .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+.hamburger-button.open .hamburger-line:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
-  nav {
-    flex-wrap: wrap;
-    justify-content: center;
+
+  .lang-switcher {
+    margin: 0;
   }
 
-  .logo {
-    margin: 0 auto;
+  .hamburger-button {
+    display: block; /* Show hamburger on mobile */
+  }
+
+  .nav-menu {
+    display: none; /* Hide nav-menu by default on mobile */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    z-index: 999; /* Below fixed header but above page content */
+  }
+
+  .nav-menu.open {
+    display: flex; /* Show when open */
   }
 
   .nav-links {
-    display: none;
-  }
-
-  .lang-switcher {
-    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
   }
 
   .hero h1 {
@@ -427,6 +481,12 @@ footer {
 
   section {
     padding: 3rem 1rem;
+  }
+
+  .lang-switcher {
+    margin-top: 1rem;
+    margin-left: 0;
+    justify-content: center;
   }
 }
 
