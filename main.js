@@ -49,7 +49,6 @@ teamMembers.forEach((el) => observer.observe(el));
 document.addEventListener('DOMContentLoaded', () => {
   const fileInput = document.getElementById('file-upload');
   const fileListDisplay = document.getElementById('file-list');
-  const contactForm = document.getElementById('contactForm');
 
   if (fileInput && fileListDisplay) {
     fileInput.addEventListener('change', (event) => {
@@ -65,6 +64,32 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         fileListDisplay.appendChild(list);
       }
+    });
+  }
+
+  // Hamburger Menu Toggle
+  const hamburgerButton = document.querySelector('.hamburger-button');
+  const navMenu = document.querySelector('.nav-menu');
+
+  if (hamburgerButton && navMenu) {
+    const navLinksInMenu = navMenu.querySelectorAll('.nav-links a, .lang-switcher a');
+
+    hamburgerButton.addEventListener('click', () => {
+      const isOpen = navMenu.classList.toggle('open');
+      hamburgerButton.classList.toggle('open');
+      hamburgerButton.setAttribute('aria-expanded', isOpen.toString());
+    });
+
+    // Close menu when a link is clicked
+    navLinksInMenu.forEach(link => {
+      link.addEventListener('click', () => {
+        // Only close if the menu is currently open
+        if (navMenu.classList.contains('open')) {
+          navMenu.classList.remove('open');
+          hamburgerButton.classList.remove('open');
+          hamburgerButton.setAttribute('aria-expanded', 'false');
+        }
+      });
     });
   }
 });
