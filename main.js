@@ -12,7 +12,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Function to scroll to contact section
 window.scrollToContact = function () {
   document.querySelector('#contact').scrollIntoView({
-    behavior: 'smooth'
+    behavior: 'smooth',
+      block: 'center'
   });
 }
 
