@@ -34,6 +34,17 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  min-height: 60px;
+}
+
+.nav-section-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-section-right {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -45,19 +56,37 @@ nav {
 .logo img {
   width: 250px;
   height: auto;
+  display: block;
+}
+
+.header-top-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 0.75rem;
+  color: var(--primary-color);
+  margin-left: 1rem;
+  line-height: 1.3;
+}
+
+.header-top-info div {
+  white-space: nowrap;
+}
+
+
+.header-top-info a {
+  color: var(--primary-color);
+  text-decoration: none;
 }
 
 .nav-menu {
-  display: flex; /* For desktop: nav-links and lang-switcher side-by-side */
+  display: flex; 
   align-items: center;
 }
 
-/* nav-links and lang-switcher are children of nav-menu */
-
 .nav-links {
   display: flex;
-  gap: 2rem;
-  margin-left: auto;
+  gap: 1.5rem;
 }
 
 .nav-links a {
@@ -105,6 +134,7 @@ nav {
   align-items: center;
   text-align: center;
   color: white;
+  padding-top: 70px;
 }
 
 .hero-content {
@@ -410,7 +440,7 @@ footer {
 
 /* Hamburger Menu Button */
 .hamburger-button {
-  display: none; /* Hidden by default, shown in media query */
+  display: none;
   background: none;
   border: none;
   cursor: pointer;
@@ -427,7 +457,6 @@ footer {
   transition: all 0.3s ease-in-out;
 }
 
-/* Styling for 'X' close icon when menu is open */
 .hamburger-button.open .hamburger-line:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
@@ -440,17 +469,34 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  nav {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .logo img {
+    width: 150px;
+  }
+
+  .header-top-info {
+    font-size: 0.7rem;
+    margin-left: 0.5rem;
+  }
+  .header-top-info div {
+     white-space: normal;
+  }
+
 
   .lang-switcher {
     margin: 0;
   }
 
   .hamburger-button {
-    display: block; /* Show hamburger on mobile */
+    display: block; 
   }
 
-  .nav-menu {
-    display: none; /* Hide nav-menu by default on mobile */
+  .nav-section-right .nav-menu {
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
@@ -460,11 +506,11 @@ footer {
     flex-direction: column;
     align-items: center;
     padding: 1rem 0;
-    z-index: 999; /* Below fixed header but above page content */
+    z-index: 999; 
   }
 
-  .nav-menu.open {
-    display: flex; /* Show when open */
+  .nav-section-right .nav-menu.open {
+    display: flex;
   }
 
   .nav-links {
@@ -472,7 +518,7 @@ footer {
     gap: 1rem;
     width: 100%;
     text-align: center;
-    margin-left: 0;
+    margin-left: 0; 
   }
 
   .hero h1 {
@@ -492,11 +538,9 @@ footer {
 
 /*Remove animations*/
 @media(prefers-reduced-motion) {
-  .service-card {
-    transition: none;
-  }
-
-  .project-card {
+  .service-card,
+  .project-card,
+  .team-member {
     transition: none;
   }
 }
